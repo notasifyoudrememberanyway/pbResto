@@ -40,8 +40,42 @@ header nav ul li {
 
 
 
-/*header style start*/
-/*header style end*/
+/*hero style start*/
+.hero-info h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  color: rgb(50,50,50);
+  margin: 3rem 0;
+}
+.vegana {
+  color: #2A9D8F;
+}
+
+#hero-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+#hero-buttons :first-child {
+  background-color: #e76f51
+  color: white;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 5px 5px 15 #E76F51ec;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15%;
+}
+
+#hero-buttons :last-child {
+  border: none;
+  background-color: white;
+  font-size: 1 rem;
+}
+
+.hero-info img {
+  margin: 3rem o;
+
+}
+/*hero style end*/
 /*header style start*/
 /*header style end*/
 
@@ -69,5 +103,15 @@ header nav ul li {
     #burger-menu {
       display: none;
     }
-
+.hero {
+  display: flex;
+  padding: 1rem;
+}
+.hero-info {
+  padding: 1rem;
+}
+#hero-image {
+  width: 375px;
+}
+  }
 }
