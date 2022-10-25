@@ -19,6 +19,29 @@ img{
   width: 100%;
 }
 
+.section-title {
+ text-align: center;
+ margin: 2rem auto; 
+ font-family: 'Rancho' , cursiv;
+ letter-spacing: 1px;
+ font-size: 2rem;
+ font-weight: lighter;
+}
+
+section-title span {
+  display: block;
+  color: #e76f51;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  background-color: #2A9D8F;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
 /*header style start*/
 header nav ul li {
   display: none;
@@ -38,8 +61,6 @@ header nav ul li {
 }
 /*header style end*/
 
-
-
 /*hero style start*/
 .hero-info h1 {
   font-weight: lighter;
@@ -56,10 +77,10 @@ header nav ul li {
   justify-content: space-around;
 }
 #hero-buttons :first-child {
-  background-color: #e76f51
+  background-color: #e76f51;
   color: white;
-  padding: 0.5rem 1.5rem;
-  box-shadow: 5px 5px 15 #E76F51ec;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 5px 5px 15px #E76F51ec;
   border-radius: 5px;
   border: none;
   margin-right: 15%;
@@ -76,6 +97,59 @@ header nav ul li {
 
 }
 /*hero style end*/
+
+/*specialties style start*/
+.specialty-category {
+  color:#e76f51;
+  font-size:0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+.specialty-category::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+
+  
+}
+.specialty-description {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.specialty-title {
+  font-size: 2,6rem;
+  display: block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.specialty-title::after {
+  font-size: 2,6rem;
+  display: block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.specialty-img {
+  box-shadow: 5px 5px 15px rgba(200,200,200,0.8);
+
+}
+/*specialties style end*/
+
 /*header style start*/
 /*header style end*/
 
@@ -103,15 +177,50 @@ header nav ul li {
     #burger-menu {
       display: none;
     }
+
 .hero {
   display: flex;
   padding: 1rem;
 }
+
 .hero-info {
   padding: 1rem;
+}
+
+.hero-info-block {
+display: block;
+}
+
+#hero-buttons {
+  justify-content: flex-start;
 }
 #hero-image {
   width: 375px;
 }
-  }
+.specialties {
+  padding: 2rem;
+  background-color: #EFEFEF;
+}
+.specialty-item {
+  display:flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.specialty-img {
+  width: 375px;
+}
+.price {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.price span { 
+  margin-bottom: 1rem;
+}
+.specialty-item:last-child .specialty-img {
+  order:1;
+}
+.specialty-item:last-child .specialty-info {
+  order:2;
+}
 }
