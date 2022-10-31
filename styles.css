@@ -159,12 +159,131 @@ header nav ul li {
 }
 .specialty-img {
   box-shadow: 5px 5px 15px rgba(200,200,200,0.8);
-
 }
 /*specialties style end*/
 
-/*header style start*/
-/*header style end*/
+/*menu style start*/
+
+.menu-title {
+font-size: 2.5rem;
+font-weight: lighter;
+}
+
+.menu-item {
+  display: flex;
+  margin: 2rem;
+  position: relative;
+  align-items: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.menu-item::after {
+  content: "" ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0.5rem;
+  border-bottom: 1px dashed black;
+}
+
+.menu-item:last-child::after {
+  border: none;
+}
+
+.menu-item img {
+width: 60px;
+height: 60px;
+border-radius: 30px;
+margin-right: 1rem;
+}
+
+.menu-item section h3 {
+  margin-bottom: 1rem;
+}
+
+.menu-item section h3 span {
+  margin-left: 3rem;
+  font-weight: lighter;
+  color: #333333;
+}
+
+.menu-item p {
+  color: #333333
+}
+
+/*menu style end*/
+
+/*testimony style start*/
+.testimony-hero {
+  position: relative;
+}
+
+.testimony-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: cente;
+  transform: translate(-50%, -50%);
+  /*tadding top/left of 50% moves the top/left margin edge of the element to 
+  the middle of the parent and translate () functions with the (negative) value 
+  of -50% moves around the element by half its size. Hence the element will be 
+  positioned at the middle.*/
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.4rem;
+  width: 80%;
+  height: 100%;
+  font-weight: lighter;
+}
+
+.testimony-quote {
+  font-size: 6rem;
+}
+/*testimony style end*/
+
+/*expert style start*/
+.expert {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.expert-img {
+  height: 60vh;
+}
+
+.expert-info {
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.expert-info p {
+  color: #333333;
+  font-weight: lighter;
+  margin: 1rem o;
+}
+
+.expert-social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin:0 auto;
+  color: #0a66c2;
+}
+
+.expert-social :last-child {
+  color: #55ACEE;
+}
+
+/*expert style end*/
 
 @media screen and (min-width:725px) { 
 
@@ -236,4 +355,32 @@ display: block;
 .specialty-item:last-child .specialty-info {
   order:2;
 }
+.menu-container {
+  display: flex;
+  padding: 2rem;
+}
+
+.menu-title {
+  text-align: center;
+}
+
+.menu-item::after {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.experts {
+  padding: 2rem;
+}
+
+.experts-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.expert-img {
+  height: 350px;
+}
+
+
 }
