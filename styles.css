@@ -317,7 +317,6 @@ form {
 input[type=text],
 input[type=email],
 input[type=number],
-
 textarea {
   padding: 10px;
   margin-bottom: 1.6rem;
@@ -326,8 +325,94 @@ textarea {
 }
 
 .half-input {
-
+/* margin:0 auto;*/
+/* width: 100%; */
 }
+
+.form-input-half {
+  width: calc(50% - 0.7rem);
+}
+
+.half-input :first-child {
+  margin-right: 1rem;
+}
+
+input[type=submit] {
+  align-self: flex-end;
+}
+input[type=submit] :hover {
+  background-color: #e76f51;
+}
+/*Resevration style end*/
+
+/*Footer style start*/
+footer {
+  background-color: #333333;
+  padding: 1rem 2rem ;
+  color: white;
+}
+
+.footer-info-p {
+  font-size: 1.2rem ;
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  font-family: 'Rancho', cursive; 
+  font-size: 4rem;
+  display: block;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: 1rem auto;
+  font-size: 2.5rem;
+}
+
+.footer-title {
+  color: #e76f51;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer-title::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 0.5rem;
+border-bottom: 1px solid white;
+width: 25%;
+}
+
+.footer-times {
+  list-style: none;
+}
+
+.footer-times li {
+  padding-bottom: 1rem;
+}
+
+.footer-map {
+  width: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.direction {
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+}
+/*Footer style End*/
 
 @media screen and (min-width:725px) { 
 
@@ -426,7 +511,25 @@ display: block;
   height: 350px;
 }
 
-
-
-
+.reservation-form-section {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  background-color: rgba(0,0,0,0.75);
+  width: 40%;
+  height: 90%;
 }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+
+.footer-1, .footer-2, .footer-3 {
+  flex:1 1 350px
+}
+}
+
